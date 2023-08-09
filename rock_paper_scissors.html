@@ -19,6 +19,50 @@
         {computerChoice = "Scissors";}
         
         console.log(computerChoice);
+
+        let playerSelection = prompt("Choose Rock, Paper, or Scissors");
+        console.log(playerSelection)
+
+        function playRound(playerSelection, computerChoice) {
+            if (playerSelection == computerChoice)
+            {playRound = "Draw"}
+            
+            else if (playerSelection == "Rock")
+                {if(computerChoice === "Paper")
+                    {
+                        return "Paper beats rock, you lose";
+                    }
+                    else 
+                    {
+                        return "Rock beats scissors, you win"
+                    }
+
+                }
+
+            else if (playerSelection == "Paper")
+                {if(computerChoice === "Rock")
+                    {
+                        return "Paper beats rock, you win";
+                    }
+                    else 
+                    {
+                        return "Scissors beat rock, you lose"
+                    }
+                }
+
+            else if (playerSelection == "Scissors")
+                {if(computerChoice === "Paper")
+                    {
+                        return "Scissors beat paper, you win";
+                    }
+                    else 
+                    {
+                        return "Rock beats scissors, you lose"
+                    }   
+                } 
+
+        }
+        console.log(playRound(playerSelection, computerChoice));
     </script>
 </body>
 </html>
