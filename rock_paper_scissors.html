@@ -7,10 +7,18 @@
 </head>
 <body>
     <script>
-        function getComputerChoice() {
-            random.getComputerChoice
-            
-        }
+        var computerChoice = Math.random();
+
+        if (computerChoice <= 0.33)
+        {computerChoice = "Rock";}
+
+        else if (computerChoice <= 0.66)
+        {computerChoice = "Paper";}
+
+        else 
+        {computerChoice = "Scissors";}
+        
+        console.log(computerChoice);
     </script>
 </body>
 </html>
