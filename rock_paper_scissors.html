@@ -10,25 +10,25 @@
         var computerChoice = Math.random();
 
         if (computerChoice <= 0.33)
-        {computerChoice = "Rock";}
+        {computerChoice = "rock";}
 
         else if (computerChoice <= 0.66)
-        {computerChoice = "Paper";}
+        {computerChoice = "paper";}
 
         else 
-        {computerChoice = "Scissors";}
+        {computerChoice = "scissors";}
         
-        console.log(computerChoice);
+        console.log (computerChoice);
 
-        let playerSelection = prompt("Choose Rock, Paper, or Scissors");
-        console.log(playerSelection)
+        let playerSelection = prompt("Choose Rock, Paper, or Scissors").toLowerCase();
+        console.log(playerSelection);
 
         function playRound(playerSelection, computerChoice) {
             if (playerSelection == computerChoice)
             {playRound = "Draw"}
             
-            else if (playerSelection == "Rock")
-                {if(computerChoice === "Paper")
+            else if (playerSelection == "rock")
+                {if(computerChoice === "paper")
                     {
                         return "Paper beats rock, you lose";
                     }
@@ -39,8 +39,8 @@
 
                 }
 
-            else if (playerSelection == "Paper")
-                {if(computerChoice === "Rock")
+            else if (playerSelection == "paper")
+                {if(computerChoice === "rock")
                     {
                         return "Paper beats rock, you win";
                     }
@@ -50,8 +50,8 @@
                     }
                 }
 
-            else if (playerSelection == "Scissors")
-                {if(computerChoice === "Paper")
+            else if (playerSelection == "scissors")
+                {if(computerChoice === "paper")
                     {
                         return "Scissors beat paper, you win";
                     }
@@ -63,6 +63,7 @@
 
         }
         console.log(playRound(playerSelection, computerChoice));
+
     </script>
 </body>
 </html>
