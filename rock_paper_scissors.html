@@ -24,45 +24,47 @@
         console.log(playerSelection);
 
         function playRound(playerSelection, computerChoice) {
-            if (playerSelection == computerChoice)
+            if (playerSelection === computerChoice)
             {playRound = "Draw"}
             
-            else if (playerSelection == "rock")
+            else if (playerSelection === "rock")
                 {if(computerChoice === "paper")
                     {
-                        return "Paper beats rock, you lose";
+                        return "You Lose";
                     }
                     else 
                     {
-                        return "Rock beats scissors, you win"
+                        return "You Win"
                     }
 
                 }
 
-            else if (playerSelection == "paper")
+            else if (playerSelection === "paper")
                 {if(computerChoice === "rock")
                     {
-                        return "Paper beats rock, you win";
+                        return "You Win";
                     }
                     else 
                     {
-                        return "Scissors beat rock, you lose"
+                        return "You Lose"
                     }
                 }
 
-            else if (playerSelection == "scissors")
+            else if (playerSelection === "scissors")
                 {if(computerChoice === "paper")
                     {
-                        return "Scissors beat paper, you win";
+                        return "You Win";
                     }
                     else 
                     {
-                        return "Rock beats scissors, you lose"
+                        return "You Lose"
                     }   
                 } 
 
         }
         console.log(playRound(playerSelection, computerChoice));
+
+    
 
     </script>
 </body>
