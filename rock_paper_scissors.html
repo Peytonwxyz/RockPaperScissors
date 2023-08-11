@@ -25,7 +25,7 @@
 
         function playRound(playerSelection, computerChoice) {
             if (playerSelection === computerChoice)
-            {playRound = "Draw"}
+            {return "Draw"}
             
             else if (playerSelection === "rock")
                 {if(computerChoice === "paper")
@@ -64,6 +64,13 @@
         }
         console.log(playRound(playerSelection, computerChoice));
 
+//const playerPick= playerSelection();
+//const computerPick = computerChoice();
+        
+//function game() {
+    //console.log(playRound)
+    
+//}
     
 
     </script>
